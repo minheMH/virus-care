@@ -1,21 +1,71 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <!-- <img width="200" alt="Angular Logo" src="src\assets\.gitkeep"> -->
 </div>
-<h2>Here are some links to help you start: </h2>
+<h1>实时更新消息显示</h1>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <h2><a target="_blank" rel="noopener" href="http://2019ncov.chinacdc.cn/2019-nCoV/">新冠状病毒实时分布图</a></h2>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+    <h2><a target="_blank" rel="noopener" href="http://www.xinhuanet.com/politics/2020-02/02/c_1125523260.htm">钟南山院士再谈科学防控疫情</a></h2>
   </li>
+
+</ul>
+<ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <h2>您今天的体温是否异常？</h2>
+    <h2>否</h2>  <h2>是</h2>
+  </li>
+
+  <li>
+    <h2>您最近14日是否外出？</h2>
+    <h2>否</h2>  <h2>是</h2>
+  </li>
+
+  <li>
+    <h2>您目前的健康状况？</h2>
+    <h2>健康</h2>  <h2>良好</h2> <h2>不佳</h2> 
+  </li>
+
+  <li>
+    <h2>您目前的所在地区？</h2>
+    <h2>湖北</h2>  <h2>返校途中</h2> <h2>其他地区</h2> 
+  </li>
+
+  <li>
+    <h2>您目前的所在地区疫情情况？</h2>
+    <h2>严重（>500）</h2>  <h2>轻微 </h2> <h2>无</h2> 
+  </li>
+
+  <!-- <nz-form-item>
+    <nz-form-label [span]="5" nzRequired>今日所在区域：</nz-form-label>
+    <nz-form-control  [span]="12" nzErrorTip="选择所在区域">
+      <nz-select [(ngModel)]="today" nzAllowClear nzPlaceHolder="请选择" formControlName="today" id="today">
+        <nz-option nzValue="湖北" nzLabel="湖北"></nz-option>
+        <nz-option nzValue="返校中" nzLabel="返校中"></nz-option>
+        <nz-option nzValue="其他地区" nzLabel="其他地区"></nz-option>
+      </nz-select>
+    </nz-form-control>
+  </nz-form-item> -->
+
+  <li>
+    <h2></h2>
   </li>
 </ul>
+
+<!-- <nz-form-item>
+  <nz-form-label [span]="6" nzRequired>身体健康状况：</nz-form-label>
+  <nz-form-control [span]="11" nzErrorTip="您的健康状况">
+    <nz-select  nzAllowClear [(ngModel)]="health" nzPlaceHolder="请选择" formControlName="health" id="health">
+      <nz-option nzValue="健康" nzLabel="健康"></nz-option>
+      <nz-option nzValue="良好" nzLabel="良好"></nz-option>
+      <nz-option nzValue="不佳" nzLabel="不佳"></nz-option>
+    </nz-select>
+  </nz-form-control>
+</nz-form-item> -->
 
 <router-outlet></router-outlet>

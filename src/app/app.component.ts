@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'virus-defend';
+  title = '新冠病毒健康状况汇总系统';
 }

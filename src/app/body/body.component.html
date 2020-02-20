@@ -1,0 +1,31 @@
+<nz-card class="nz-card" style="width:300px;text-align: center；">
+</nz-card>
+  <form nz-form (submit)="Setting(formCont.value)" (submit)="submitForm()" #formCont="ngForm" [formGroup]="validateForm">
+    <nz-form-item>
+      <nz-form-label [span]="6" nzRequired>家庭住址：</nz-form-label>
+      <nz-form-control  [span]="11" nzErrorTip="请输入你的家庭地址">
+        <input nz-input [(ngModel)]="family" formControlName="family" id="family" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [span]="6" nzRequired>健康状况：</nz-form-label>
+      <nz-form-control [span]="11" nzErrorTip="请选择你的健康状况">
+        <nz-select  nzAllowClear [(ngModel)]="health" nzPlaceHolder="请选择" formControlName="health" id="health">
+          <nz-option nzValue="健康" nzLabel="健康"></nz-option>
+          <nz-option nzValue="不佳" nzLabel="不佳"></nz-option>
+          <nz-option nzValue="确诊病例" nzLabel="确诊病例"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [span]="6" nzRequired>有无接触历史：</nz-form-label>
+      <nz-form-control [span]="11" nzErrorTip="请选择你的接触历史">
+        <nz-select  nzAllowClear [(ngModel)]="history" nzPlaceHolder="请选择" formControlName="history" id="history">
+          <nz-option nzValue="有" nzLabel="有"></nz-option>
+          <nz-option nzValue="无" nzLabel="无"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <br>
+</form>
+  
